@@ -13,4 +13,12 @@ describe 'Battle', type: :feature do
     click_button 'Submit'
     expect(page).to have_content "Bob and Tom will be playing Battle!"
   end
+
+  it 'shows hit points on screen after names entered' do
+    visit ('/')
+    fill_in 'player_1', with: 'Bob'
+    fill_in 'player_2', with: 'Tom'
+    click_button 'Submit'
+    expect(page).to have_content "Tom's Hit points: 100"
+    end
 end
