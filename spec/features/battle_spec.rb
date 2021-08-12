@@ -20,6 +20,6 @@ describe 'Battle', type: :feature do
   it 'allows player 1 to attack player 2 and shows confirmation' do
     sign_in_and_play
     click_button('Attack')
-    expect(page).to have_content "Tom's Hit points: 90"
+    expect(page).to have_content "Bob attacked Tom"
   end
 end
