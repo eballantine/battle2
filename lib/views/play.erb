@@ -1,4 +1,8 @@
 <h2>
 <%=@player_1%> and <%=@player_2%> will be playing Battle!
 </h2>
-<p><%=@player_2%>'s Hit points: 100</p>
+<p><%=@player_2%>'s Hit points: <%=@player_2_hit_points%></p>
+
+<form action="/attack" method="POST">
+<input type="submit" value="Attack">
+</form>
