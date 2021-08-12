@@ -10,8 +10,7 @@ class Battle < Sinatra::Base
     @player_1 = params[:player_1]
     @player_2 = params[:player_2]
     erb:play
-    p params[:player_1]
-    p params[:player_2]
+
   end
 
   # start the server if ruby file executed directly
