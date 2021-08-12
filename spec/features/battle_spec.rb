@@ -1,5 +1,6 @@
 require 'app'
 
+
 describe 'Battle', type: :feature do
   it 'has a home page' do
     visit ('/')
@@ -7,18 +8,12 @@ describe 'Battle', type: :feature do
   end
 
   it 'fills, submits and returns names' do
-    visit ('/')
-    fill_in 'player_1', with: 'Bob'
-    fill_in 'player_2', with: 'Tom'
-    click_button 'Submit'
+    sign_in_and_play
     expect(page).to have_content "Bob and Tom will be playing Battle!"
   end
 
   it 'shows hit points on screen after names entered' do
-    visit ('/')
-    fill_in 'player_1', with: 'Bob'
-    fill_in 'player_2', with: 'Tom'
-    click_button 'Submit'
+    sign_in_and_play
     expect(page).to have_content "Tom's Hit points: 100"
     end
 end
