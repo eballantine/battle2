@@ -1,4 +1,4 @@
-require 'models/player'
+require 'player'
 
 describe Player do
   it  "returns it's name" do

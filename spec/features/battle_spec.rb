@@ -1,4 +1,4 @@
-require 'app'
+require './app'
 
 
 describe 'Battle', type: :feature do
