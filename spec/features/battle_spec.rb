@@ -12,10 +12,10 @@ describe 'Battle', type: :feature do
     expect(page).to have_content "Bob and Tom will be playing Battle!"
   end
 
-  it 'shows hit points on screen after names entered' do
-    sign_in_and_play
-    expect(page).to have_content "Tom's Hit points: 100"
-  end
+  # it 'shows hit points on screen after names entered' do
+  #   sign_in_and_play
+  #   expect(page).to have_content "Tom's Hit points: 100"
+  # end
 
   it 'allows player 1 to attack player 2 and shows confirmation' do
     sign_in_and_play
